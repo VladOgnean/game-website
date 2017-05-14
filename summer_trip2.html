@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Summer Trip </title>
+        <link rel="stylesheet" type="text/css" href="summer_trip2.css"/>
+    </head>
+    <body id="homepage_body">
+        <ul>
+            <li><a href="#" class="showHome"> Home </a></li>
+            <li><a href="#" class="showStep1"> Date personale </a></li>
+            <li><a href="#" class="showStep2"> Joaca si castiga </a></li>
+            <li><a href="#" class="showStep3"> Sa vedem ce ai castigat </a></li>
+        </ul>
+
+        <div id="home" class="homepage_page">
+            <h1 id="homepage_titlu" class="diferite_titluri"> Poti castiga o vacanta de vis !</h1>
+            <p id="homepage_explicatii" class="diferite_explicatii"> <br/> Tot ce trebuie sa faci este sa citesti cu atentie termenii si conditiile de mai jos 
+                <br/> Respecta cu strictete pasii urmatori: 
+                <br/> 1-In meniul de mai sus vei selecta "Date personale" unde vei introduce datele necesare inscrierii. Atentie! Va trebui sa introduci atat un numar de card corect cat si cnp-ul tau personal valid pentru a putea beneficia de premiile oferite.
+                <br/> 2-Dupa ce ai introdus datele tale personale vei selecta rubrica "Joaca si castiga" unde vei avea un joc al mintii. Atentie! Va trebui sa respecti cerintele acestuia pe care ti le vom oferi.
+                <br/> 3-Dupa ce ai obtinut punctajul de la pasul 2 vei selecta rubrica "Sa vedem ce ai castigat". Atentie! Respecta cerintele pentru a calcula corect si a vedea ceea ce ai castigat.
+            </p>
+        </div>
+
+        <div id="step1" class="homepage_hidden homepage_page">
+            <br/>
+            <h1 id="titlu" class="diferite_titluri"> Cod Numeric Personal </h1>
+            <br/>
+            <br/>
+            <p id="explicatii" class="diferite_explicatii"> In casutele care urmeaza veti completa data nasterii avand in vedere urmatoarele considerente.Pentru a putea confirma validitatea cnp-ului dumneavoastra va rugam sa respectati urmatoarele reguli referitoare la datele pe care le veti completa mai jos si anume: 
+            <br/>
+            Ziua: pentru zile cuprinse in intervalul 1-9 inclusiv veti completa cu cifra 0 in fata.
+            <br/>
+            Luna: pentru lunile cuprinse in intervalul 1-9 inclusiv veti completa cu cifra 0 in fata.
+            <br/>
+            Anul: veti completa ultimele 2 cifre ale anului nasterii.
+            <br/>
+            </p>
+            <div id="input_text" class="elemente_text">
+                <label> CNP complet </label>
+                <br/>
+                <input type="textbox" class="casute" id="SSN" />
+                <br/>
+                <label> Tasteaza ziua  </label>
+                <br/>
+                <input type="textbox" class="casute" id="Day" />
+                <br/>
+                <label> Tasteaza luna  </label>
+                <br/>
+                <input type="textbox" class="casute" id="Month" />
+                <br/>
+                <label> Tasteaza anul </label>
+                <br/>
+                <input type="textbox" class="casute" id="Year" />
+                <br/>
+                <input type="button" id="buton_verifica" class="butoane" value="Verifica CNP" >
+            </div>
+            <h1 id="Step1_titlu_credit_card" class="diferite_titluri"> Contul dumneavoastra </h1> 
+            <br/>
+            <br/>
+            <p id="explicatii2" class="diferite_explicatii"> In casuta care urmeaza veti completa numarul dumneavoastra de cont avand in vedere urmatoarele considerente.Pentru a putea confirma validitatea contului dumneavoastra va rugam sa respectati urmatoarele reguli referitoare la datele pe care le veti completa mai jos si anume: 
+            <br/>
+            Trebuie sa contina exact 16 cifre.Toate trebuie sa fie cifre si trebuie sa aveti cel putin 2 diferite.
+            <br/>
+            Ultima cifra trebuie sa fie para.Suma tutror cifrelor trebuie sa fie mai mare de 16.
+            <br/>
+            </p>
+            <input type="textbox" id="CCN" class="casute" />
+            <br/>
+            <br/>
+            <br/>
+            <input type="button" id="verifica_buton" class="butoane" value="Verifica Cont">
+            <br/>
+            <br/>
+        </div>
+
+        <div id="step2" class="homepage_hidden homepage_page">
+            <form id="frm" name="form1">
+                <h1 id="titlu_game" class="diferite_titluri"> Ghiceste Numarul </h1>
+                <p id="explicatie" class="diferite_explicatii"> Jocul se bazeaza pe capacitatea dumneavoastra de intuitie. Regulile sunt simple. In cele ce urmeaza aveti 3 butoane. Cand dati click pe butonul de start va este atribuit un numar secret. In casuta de langa butonul incearca trebuie sa introduceti numarul care credeti ca v-a fost atribuit. Acesta poate fi unul de la 1 la 100. Apoi veti da click pe incearca. Veti primi un mesaj care va spune daca numarul introdus de dumneavoastra este mai mare sau mai mic decat numarul secret. Apoi introduceti alt numar pana cand il ghiciti pe cel corect. In acest moment veti da click pe butonul rezultat care va va comunica numarul de incercari si punctajul obtinut acesta fiind numarul de incercari multiplicat de 10 ori.SUCCES!</p>
+                <div id="div_joc" class="elemente_text">
+                    <input type="button" class="butoane" id="buton_start" value="START">
+                    <br/>
+                    <br/>
+                    <input type="textbox" id="casuta_input" class="casute">
+                    <input type="button" class="butoane" id="incearca" value="INCEARCA">
+                    <input name="casuta_castigator" id="casuta_castigator_invizibil">
+                    <br/>
+                    <br/>
+                    <input type="button" class="butoane" id="rezultat" value="REZULTAT">
+                </div>
+            </form>
+        </div>
+
+        <div id="step3" class="homepage_hidden homepage_page">
+            <form id ="form" name="form">
+                <div id="div_calculator">
+                    <input type="button" id="c" class="butoane_calculator" value="c">   
+                    <input name="rezultat" id="casuta_rezultat">
+                    <br/>
+                    <input type="button" id="7" class="butoane_calculator" value="7">
+                    <input type="button" id="8" class="butoane_calculator" value="8">
+                    <input type="button" id="9" class="butoane_calculator" value="9">
+                    <input type="button" id="aduna" class="butoane_calculator" value="+">
+                    <br/>
+                    <input type="button" id="4" class="butoane_calculator" value="4">
+                    <input type="button" id="5" class="butoane_calculator" value="5">
+                    <input type="button" id="6" class="butoane_calculator" value="6">
+                    <input type="button" id="scade" class="butoane_calculator" value="-">
+                    <br/>
+                    <input type="button" id="1" class="butoane_calculator" value="1">
+                    <input type="button" id="2" class="butoane_calculator" value="2">
+                    <input type="button" id="3" class="butoane_calculator" value="3">
+                    <input type="button" id="imparte" class="butoane_calculator" value="/">
+                    <br/>
+                    <input type="button" id="0" class="butoane_calculator" value="0">
+                    <input type="button" id="virgula" class="butoane_calculator" value=".">
+                    <input type="button" id="egal" class="butoane_calculator" value="=">
+                    <input type="button" id="ori" class="butoane_calculator" value="*">
+                </div>
+            </form>
+            <br/>
+            <br/>
+            <h1 id="final" class="diferite_titluri"> Putina matematica si ne facem bagajele </h1>
+            <p id="explicatie3" class="diferite_explicatii"> Folosind punctajul obtinut in jocul de la pasul 2 inlocuiti in expresia matematica care urmeaza, pe x cu punctajul obtinut si calculati punctajul final folsind calculatorul de mai sus.In imaginile de mai jos veti vedea ce ati castigat conform punctajului obtinut.
+            <br/>
+            (x/10)+(x/5)= punctaj final 
+            <br/>
+            SUCCES!</p>
+            <br/>
+            <h1 class="diferite_titluri"> Daca ati obtinut intre 1 si 10 puncte premiul este 10000 $ </h1>
+            <br/>
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/f3/d6/fc/f3d6fc3b9fe9eff70fabd4e4f658882e.jpg" class="p1">
+            <span><img src="http://animal-dream.com/data_images/money/money8.jpg" class="p1"></span>
+            <br/>
+            <h1 class="diferite_titluri"> Daca ati obtinut intre 10 si 20 puncte premiul este o vacanta de vis in Viena </h1>
+            <br/>
+            <img src="http://mobihealth.name/2017/media/carousel-images/rathaus-frontal-wien-tourismus.jpg" class="p1">
+            <span><img src="https://www.wien.info/media/images/40367-graben-einkaufen-shopping-altstadt-einkaufsstrassen-19to1.jpeg" class="p1"></span>
+            <br/>
+            <br/>
+            <h1 class="diferite_titluri"> Daca ati obtinut intre 20 si 40 puncte premiul este o vacanta de vis in Budapesta </h1>
+            <br/>
+            <img src="https://s.inyourpocket.com/gallery/108367.jpg" class="p1">
+            <span><img src="http://cdn.hungexpo.hu/gallery/100088/1446631736_Bp-H.jpg" class="p1"></span>
+            <br/>
+            <br/>
+            <h1 class="diferite_titluri"> Daca ati obtinut mai mult de 40 puncte premiul este o colectie de jocuri de logica </h1>
+            <br/>
+            <img src="http://1i1uzk29qpyovwq5s2t9ptd1-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/Learning-Games-for-Kids-in-Preschool-Code-Master-Programming-Logic-Game-resized.jpg" class="p1">
+            <span><img src="http://blog.toysparadise.com.au/wp-content/uploads/2011/05/legogames.jpg" class="p1"></span>
+            <br/>
+            <br/>
+        </div>
+
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous">
+        </script>
+
+        <script src="summer_trip2.js" type="text/javascript"></script>
+        
+    </body>
+</html>
